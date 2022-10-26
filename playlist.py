@@ -1,3 +1,5 @@
+import numpy as np
+
 # Music playlist challenge!
 # In this challenge, you'll have to both work on this script, and the accompanying script playlist_helpers.py
 # All of your functions should be in the other script (playlist_helpers.py)
@@ -9,7 +11,8 @@
 
 # This code initializes your playlist as an empty list. No songs in it yet!
 from playlist_helpers import *
-import numpy as np
+
+
 
 
 my_playlist = []
@@ -52,7 +55,7 @@ display_playlist(my_playlist)
 
 # 6.2 TODO: Call the get_playlist_length function you just created in THIS script
 # to get the length of my_playlist (make sure you print out the result here!)
-get_playlist_length(my_playlist)
+print(get_playlist_length(my_playlist))
 
 # 7.0 TODO: At the top of this script, import numpy using the usual alias
 
@@ -61,6 +64,7 @@ get_playlist_length(my_playlist)
 # 8.0 TODO: using the mean() function from numpy, calculate and print the average of monthly_plays
 # You don't have to write any functions for this question
 monthly_plays = [127030, 274920, 232453, 98278, 500301, 235462]
+print(np.mean(monthly_plays))
 
 
 # 9.0 TODO: In playlist_helpers.py, define a new function called play_track()

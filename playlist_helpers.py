@@ -29,7 +29,7 @@ The function should return an integer value indicating how many songs there are
 The function should NOT print anything out
 '''
 def get_playlist_length(playlist):
-    len(playlist)
+    return len(playlist)
 
 
 '''
@@ -48,7 +48,7 @@ def play_track(playlist,track=1):
     try:
         song = playlist[track-1]
         print(f'Now playing Track {track}: {song["title"]} by {song["artist"]}')
-        song["play"]+=1
+        song["plays"]+=1
     except IndexError: 
         return
 
